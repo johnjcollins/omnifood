@@ -16,13 +16,13 @@
     &--full:link,
     &--full:visited {
         background-color: $color-orange;
-        border: 1px solid $color-orange;
+        border: 2px solid $color-orange;
         margin: 1.5rem;
     }
 
     &--ghost:link,
     &--ghost:visited {
-        border: 1px solid $color-orange;
+        border: 2px solid $color-orange;
         color: $color-orange;
     }
 
@@ -33,12 +33,12 @@
 
     &--full:hover,
     &--full:active {
-        border: 1px solid $color-orange-dark;
+        border: 2px solid $color-orange-dark;
     }
 
     &--ghost:hover,
     &--ghost:active {
-        border: 1px solid $color-orange-dark;
+        border: 2px solid $color-orange-dark;
         color: $color-white;
     }
     
