@@ -1,0 +1,14 @@
+%heading-placeholder {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+%head-uline-placeholder {
+    display: block;
+    height: 2px;
+    background-color: $color-orange;
+    width: 10rem;
+    content: ' ';
+    margin: 0 auto;
+    margin-top: 3rem;
+}
