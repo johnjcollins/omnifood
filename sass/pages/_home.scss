@@ -22,6 +22,8 @@
 
 .section-meals {
 
+    @include clearfix;
+
     &__list {
         list-style: none;
         width: 100%;
@@ -52,4 +54,8 @@
             transform: scale(1.03);
         }
     }
+}
+
+.section-steps {
+    
 }

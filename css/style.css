@@ -160,6 +160,11 @@ body {
   font-size: 1.8rem;
   line-height: 145%; }
 
+.section-meals::after {
+  content: '';
+  display: table;
+  clear: both; }
+
 .section-meals__list {
   list-style: none;
   width: 100%; }
