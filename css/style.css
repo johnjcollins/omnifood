@@ -85,7 +85,7 @@ body {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 5rem; }
   .row::after {
     content: '';
     display: table;
@@ -171,8 +171,16 @@ body {
 
 .section-meals__photo {
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden;
+  background-color: #000; }
 
 .section-meals__image {
+  opacity: .7;
   width: 100%;
-  height: auto; }
+  height: auto;
+  transform: scale(1.15);
+  transition: transform .5s, opacity .5s; }
+  .section-meals__image:hover {
+    opacity: 1;
+    transform: scale(1.03); }

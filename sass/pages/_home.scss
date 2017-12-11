@@ -36,10 +36,20 @@
     &__photo {
         width: 100%;
         margin: 0;
+        overflow: hidden;
+        background-color: $color-black;
     }
 
     &__image {
+        opacity: .7;
         width: 100%;
         height: auto;
+        transform: scale(1.15);
+        transition: transform .5s, opacity .5s;
+
+        &:hover {
+            opacity: 1;
+            transform: scale(1.03);
+        }
     }
 }
