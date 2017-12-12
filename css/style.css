@@ -160,14 +160,13 @@ body {
   font-size: 1.8rem;
   line-height: 145%; }
 
-.section-meals::after {
-  content: '';
-  display: table;
-  clear: both; }
-
 .section-meals__list {
   list-style: none;
   width: 100%; }
+  .section-meals__list::after {
+    content: '';
+    display: table;
+    clear: both; }
 
 .section-meals__item {
   display: block;
@@ -189,3 +188,37 @@ body {
   .section-meals__image:hover {
     opacity: 1;
     transform: scale(1.03); }
+
+.section-steps {
+  background-color: #f4f4f4; }
+  .section-steps__step-box:first-child {
+    text-align: right;
+    padding-right: 2%; }
+  .section-steps__step-box:last-child {
+    padding-left: 2%;
+    margin-top: 5rem; }
+  .section-steps__app-screen {
+    width: 40%; }
+  .section-steps__step {
+    margin-bottom: 4rem;
+    font-size: 2rem; }
+    .section-steps__step:last-of-type {
+      margin-bottom: 9rem; }
+    .section-steps__step div {
+      color: #e67e22;
+      border: 2px solid #e67e22;
+      display: inline-block;
+      padding: .5rem;
+      border-radius: 50%;
+      height: 5.5rem;
+      width: 5.5rem;
+      float: left;
+      text-align: center;
+      font-size: 3rem;
+      margin-right: 2.5rem; }
+  .section-steps__btn {
+    display: inline-block;
+    margin-right: 1rem; }
+    .section-steps__btn img {
+      height: 5rem;
+      width: auto; }

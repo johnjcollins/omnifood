@@ -22,9 +22,10 @@
 
 .section-meals {
 
-    @include clearfix;
-
     &__list {
+
+        @include clearfix;
+
         list-style: none;
         width: 100%;
     }
@@ -57,5 +58,55 @@
 }
 
 .section-steps {
+    background-color: $color-grey-light;
+
+    &__step-box {
+        &:first-child {
+            text-align: right;
+            padding-right: 2%;
+        }
+
+        &:last-child {
+            padding-left: 2%;
+            margin-top: 5rem;
+        }
+    }
+
+    &__app-screen {
+        width: 40%;
+    }
+
+    &__step {
+        margin-bottom: 4rem;
+        font-size: 2rem;
+
+        &:last-of-type {
+            margin-bottom: 9rem;
+        }
+
+        div {
+            color: $color-orange;
+            border: 2px solid $color-orange;
+            display: inline-block;
+            padding: .5rem;
+            border-radius: 50%;
+            height: 5.5rem;
+            width: 5.5rem;
+            float: left;
+            text-align: center;
+            font-size: 3rem;
+            margin-right: 2.5rem;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        margin-right: 1rem;
+
+        img {
+            height: 5rem;
+            width: auto;
+        }
+    }
     
 }
